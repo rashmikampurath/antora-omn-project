@@ -1,0 +1,24 @@
+{
+  "name": "antora-omn-project",
+  "private": true,
+  "description": "Proof that Antora isolation comes from playbooks + components, not from a new module in the same component",
+  "scripts": {
+    "build": "bash scripts/build-all.sh",
+    "build:a": "sh -c 'cd demo-a-new-module && antora playbook-old.yml'",
+    "build:b": "sh -c 'cd demo-b-two-components && antora playbook-old.yml && antora playbook-new.yml'",
+    "build:c": "sh -c 'cd demo-c-new-repo/existing-docs && antora playbook-old.yml && cd ../new-site && antora playbook.yml'",
+    "build:c-broad": "sh -c 'cd demo-c-new-repo/new-site && antora playbook-too-broad.yml'",
+    "preview:a": "npx --yes serve demo-a-new-module/build/site -p 5010",
+    "preview:b-old": "npx --yes serve demo-b-two-components/build/site-old -p 5011",
+    "preview:b-new": "npx --yes serve demo-b-two-components/build/site-new -p 5012",
+    "preview:c-old": "npx --yes serve demo-c-new-repo/existing-docs/build/site -p 5013",
+    "preview:c-new": "npx --yes serve demo-c-new-repo/new-site/build/site -p 5014"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@antora/cli": "^3.1.14",
+    "@antora/site-generator": "^3.1.14"
+  }
+}
