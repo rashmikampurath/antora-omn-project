@@ -1,0 +1,17 @@
+site:
+  title: Demo B — new website
+  url: http://localhost:5012
+  start_page: new-product::new-only.adoc
+content:
+  sources:
+  - url: .
+    start_paths:
+    - content/shared
+    - content/new-product
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./ui-new
+output:
+  dir: build/site-new

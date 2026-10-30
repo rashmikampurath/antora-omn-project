@@ -1,0 +1,6 @@
+= Old-only page
+:description: Must appear only on the existing website.
+
+This page belongs to the **existing product**.
+
+It must **not** be published on the new website.

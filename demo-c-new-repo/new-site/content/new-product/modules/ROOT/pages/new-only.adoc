@@ -1,0 +1,4 @@
+= New-only page
+:description: Must never appear on the existing website.
+
+This page lives only in the **new-site git repo**. The existing-docs playbook never lists it.

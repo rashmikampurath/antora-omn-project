@@ -1,0 +1,2 @@
+* xref:shared-a.adoc[]
+* xref:shared-b.adoc[]

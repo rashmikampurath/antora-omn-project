@@ -1,0 +1,4 @@
+= Shared page B
+:description: Specified page that both websites may reuse.
+
+The new git repo does not copy this file. Its playbook pulls the `shared` component from existing-docs.

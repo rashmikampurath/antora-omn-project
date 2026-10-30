@@ -1,0 +1,4 @@
+= Old-only page
+:description: Must appear only on the existing website.
+
+This page lives in the **existing-docs git repo** and is not listed in the new site playbook.

@@ -1,0 +1,13 @@
+/* Existing website look — green navbar */
+.navbar {
+  background: #1b7f4e !important;
+}
+body::before {
+  content: "EXISTING WEBSITE UI";
+  display: block;
+  background: #1b7f4e;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.4rem;
+}

@@ -1,0 +1,17 @@
+site:
+  title: Demo B — existing website
+  url: http://localhost:5011
+  start_page: existing::old-only.adoc
+content:
+  sources:
+  - url: .
+    start_paths:
+    - content/existing
+    - content/shared
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./ui-old
+output:
+  dir: build/site-old

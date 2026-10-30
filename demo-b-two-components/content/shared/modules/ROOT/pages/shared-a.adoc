@@ -1,0 +1,4 @@
+= Shared page A
+:description: Specified page that both websites may reuse.
+
+This is one of the **specified** existing pages. Both playbooks include the `shared` component.

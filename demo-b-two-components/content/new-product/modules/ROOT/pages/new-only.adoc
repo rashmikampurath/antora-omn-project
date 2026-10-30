@@ -1,0 +1,6 @@
+= New-only page
+:description: Must never appear on the existing website.
+
+This page is specific to the **second product**.
+
+The old playbook does not include the `new-product` component, so this page must **not** appear on the existing website.

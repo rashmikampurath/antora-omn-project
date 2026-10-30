@@ -1,0 +1,25 @@
+# Counter-example: do not use this for the real new site.
+# It includes the whole existing-docs tree, so old-only pages flood the new website.
+site:
+  title: Demo C — TOO BROAD (shows the failure mode)
+  url: http://localhost:5015
+  start_page: existing::old-only.adoc
+content:
+  sources:
+  - url: ../existing-docs
+    branches: HEAD
+    start_paths:
+    - content/existing
+    - content/shared
+  - url: .
+    start_paths:
+    - content/new-product
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+output:
+  dir: build/site-too-broad
+runtime:
+  fetch: true

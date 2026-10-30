@@ -1,0 +1,1 @@
+* xref:old-only.adoc[]

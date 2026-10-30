@@ -1,0 +1,13 @@
+/* New website look — navy navbar */
+.navbar {
+  background: #0b3d5c !important;
+}
+body::before {
+  content: "NEW WEBSITE UI";
+  display: block;
+  background: #0b3d5c;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.4rem;
+}

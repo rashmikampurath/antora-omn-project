@@ -1,0 +1,5 @@
+name: existing
+title: Existing product
+version: ~
+nav:
+- modules/ROOT/nav.adoc
